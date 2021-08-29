@@ -18,23 +18,23 @@
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
-    "libusbcompileandroid-Debug-x86": {
+    "usb-1.0-Debug-x86": {
       "buildCommandComponents": [
         "C:\\Users\\ibaig\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
         "-C",
         "C:\\Users\\ibaig\\Desktop\\libusbCompileAndroid\\app\\.cxx\\Debug\\4r3a3p1c\\x86",
-        "libusbcompileandroid"
+        "usb-1.0"
       ],
       "buildType": "debug",
       "abi": "x86",
-      "artifactName": "libusbcompileandroid",
-      "output": "C:\\Users\\ibaig\\Desktop\\libusbCompileAndroid\\app\\build\\intermediates\\cxx\\Debug\\4r3a3p1c\\obj\\x86\\liblibusbcompileandroid.so",
+      "artifactName": "usb-1.0",
+      "output": "C:\\Users\\ibaig\\Desktop\\libusbCompileAndroid\\app\\build\\intermediates\\cxx\\Debug\\4r3a3p1c\\obj\\x86\\libusb-1.0.so",
       "runtimeFiles": []
     }
   },
   "toolchains": {},
-  "cFileExtensions": [],
-  "cppFileExtensions": [
-    "cpp"
-  ]
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
 }

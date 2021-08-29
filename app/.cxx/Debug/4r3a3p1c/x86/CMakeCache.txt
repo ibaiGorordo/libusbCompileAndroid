@@ -216,14 +216,14 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Value Computed by CMake
 libusbcompileandroid_BINARY_DIR:STATIC=C:/Users/ibaig/Desktop/libusbCompileAndroid/app/.cxx/Debug/4r3a3p1c/x86
 
-//Dependencies for the target
-libusbcompileandroid_LIB_DEPENDS:STATIC=general;C:/Users/ibaig/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/28/liblog.so;
-
 //Value Computed by CMake
 libusbcompileandroid_SOURCE_DIR:STATIC=C:/Users/ibaig/Desktop/libusbCompileAndroid/app/src/main/cpp
 
 //Path to a library.
 log-lib:FILEPATH=C:/Users/ibaig/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/28/liblog.so
+
+//Dependencies for the target
+usb-1.0_LIB_DEPENDS:STATIC=general;C:/Users/ibaig/AppData/Local/Android/Sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/lib/i686-linux-android/28/liblog.so;
 
 
 ########################

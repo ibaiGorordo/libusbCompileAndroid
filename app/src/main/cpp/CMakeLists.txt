@@ -9,25 +9,35 @@ cmake_minimum_required(VERSION 3.10.2)
 
 project("libusbcompileandroid")
 
-# Creates and names a library, sets it as either STATIC
-# or SHARED, and provides the relative paths to its source code.
-# You can define multiple libraries, and CMake builds them for you.
-# Gradle automatically packages shared libraries with your APK.
+######         libusb         ######
+set(LIBUSB_DIR ${CMAKE_SOURCE_DIR}/libusb)
+set(LIBUSB_SOURCES ${LIBUSB_DIR}/libusb/core.c
+        ${LIBUSB_DIR}/libusb/descriptor.c
+        ${LIBUSB_DIR}/libusb/hotplug.c
+        ${LIBUSB_DIR}/libusb/io.c
+        ${LIBUSB_DIR}/libusb/sync.c
+        ${LIBUSB_DIR}/libusb/strerror.c
+        ${LIBUSB_DIR}/libusb/os/linux_usbfs.c
+        ${LIBUSB_DIR}/libusb/os/events_posix.c
+        ${LIBUSB_DIR}/libusb/os/threads_posix.c
+        ${LIBUSB_DIR}/libusb/os/linux_netlink.c
+        )
+
+include_directories(${LIBUSB_DIR}
+        ${LIBUSB_DIR}/android
+        ${LIBUSB_DIR}/libusb
+        ${LIBUSB_DIR}/libusb/os
+        )
 
 add_library( # Sets the name of the library.
-        libusbcompileandroid
+        usb-1.0
 
         # Sets the library as a shared library.
         SHARED
 
         # Provides a relative path to your source file(s).
-        native-lib.cpp)
+        ${LIBUSB_SOURCES})
 
-# Searches for a specified prebuilt library and stores the path as a
-# variable. Because CMake includes system libraries in the search path by
-# default, you only need to specify the name of the public NDK library
-# you want to add. CMake verifies that the library exists before
-# completing its build.
 
 find_library( # Sets the name of the path variable.
         log-lib
@@ -41,7 +51,7 @@ find_library( # Sets the name of the path variable.
 # build script, prebuilt third-party libraries, or system libraries.
 
 target_link_libraries( # Specifies the target library.
-        libusbcompileandroid
+        usb-1.0
 
         # Links the target library to the log library
         # included in the NDK.
