@@ -12,4 +12,4 @@ git submodule update --init
 ```
 
 # References
-libusb library: https://github.com/libusb/libusb
+- libusb library: https://github.com/libusb/libusb
