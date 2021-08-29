@@ -1,3 +1,0 @@
-C:/Users/ibaig/Desktop/libusbCompileAndroid/app/.cxx/Debug/4r3a3p1c/x86/CMakeFiles/usb-1.0.dir
-C:/Users/ibaig/Desktop/libusbCompileAndroid/app/.cxx/Debug/4r3a3p1c/x86/CMakeFiles/edit_cache.dir
-C:/Users/ibaig/Desktop/libusbCompileAndroid/app/.cxx/Debug/4r3a3p1c/x86/CMakeFiles/rebuild_cache.dir
