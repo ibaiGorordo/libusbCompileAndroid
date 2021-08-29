@@ -11,3 +11,5 @@ cd libusbCompileAndroid
 git submodule update --init
 ```
 
+# References
+libusb library: https://github.com/libusb/libusb
